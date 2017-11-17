@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'devise', '~> 4.2'
+gem 'bcrypt', platforms: :ruby
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server

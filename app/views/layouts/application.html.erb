@@ -10,7 +10,15 @@
 
   <body>
     <div class="container">
-    <%= yield %>
+        <%= link_to 'home', root_path %>
+        
+        <%= link_to 'iniciar sesión', new_autor_session_path %>
+        <%= link_to 'crear cuenta', new_autor_registration_path %>
+        <%= link_to 'cerrar sesión', destroy_autor_session_path, method: :delete %>
+        <%= link_to 'editar', edit_autor_registration_path %>
+
+        <%= yield %>
     </div>
   </body>
 </html>
++
